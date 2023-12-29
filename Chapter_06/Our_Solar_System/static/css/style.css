@@ -1,0 +1,126 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+    background-color: #ebebeb;
+}
+
+@media (min-width: 45rem) {
+    body {
+        max-width: 50.75rem;
+    }
+}
+
+@media (min-width: 55rem) {
+
+    body {
+        max-width: 78.75rem;
+    }
+}
+
+.Scroll_Wrapper {
+    display: flex;
+    flex: 1 0 100%;
+    flex-wrap: wrap;
+    font-size: 0;
+    /* Make a counter */
+    counter-reset: item-count;
+}
+
+/*Stops the scrollbar appearing in WebKit browsers*/
+.Scroll_Wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.Item {
+    display: flex;
+    position: relative;
+    height: 9rem;
+    width: 50%;
+    font-size: 1rem;
+    margin: 1rem 0;
+    background-color: #ebebeb;
+    border-bottom: 2px solid #bbb;
+    counter-increment: item-count;
+}
+
+@media (max-width: 44.99rem) {
+
+    /*	Get me every two items and of them, only ones that are in the last two items */
+    .Item:nth-child(2n+1):nth-last-child(-n+2),
+    /* Now get me every one after that same collection too. */
+    .Item:nth-child(2n+1):nth-last-child(-n+2)~.Item {
+        border-bottom: 0;
+    }
+}
+
+@media (min-width: 45rem) {
+    .Item {
+        width: 33.3333333333%;
+    }
+
+    /*	Get me every third item and of them, only ones that are in the last three items */
+    .Item:nth-child(3n+1):nth-last-child(-n+3),
+    /* Now get me every one after that same collection too. */
+    .Item:nth-child(3n+1):nth-last-child(-n+3)~.Item {
+        border-bottom: 0;
+    }
+}
+
+@media (min-width: 55rem) {
+    .Item {
+        width: 25%;
+    }
+
+    /*	Get me every fourth item and of them, only ones that are in the last four items */
+    .Item:nth-child(4n+1):nth-last-child(-n+4),
+    /* Now get me every one after that same collection too. */
+    .Item:nth-child(4n+1):nth-last-child(-n+4)~.Item {
+        border-bottom: 0;
+    }
+}
+
+.Item::before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: -2rem;
+    height: 1.4rem;
+    width: 1.4rem;
+    font-size: 1rem;
+    line-height: 1rem;
+    background-color: #ccc;
+    border: 1px solid #999;
+    border-radius: 50%;
+    content: counter(item-count);
+}
+
+.Item img {
+    max-height: 7.25rem;
+}
+
+.Caption {
+    font-size: 1.2rem;
+    line-height: 1.1;
+    font-weight: 800;
+    padding-left: 0.5rem;
+}
+
+.Caption em {
+    display: block;
+    font-size: 0.9em;
+    font-weight: 400;
+    margin-top: 4px;
+}
+
