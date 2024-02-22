@@ -23,7 +23,7 @@ div:not(.blue) {
     width: 5rem;
     margin: 5px;
     padding: 5px;
-	background-color: #f90;
+	background-color: orange;
 	border-radius: 50%;
     box-shadow: 5px 5px 5px black;
 }
