@@ -1,0 +1,68 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(233, 136, 101)
+}
+
+main {
+    margin: 20px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+hr {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 5px;
+    width: 500px;
+    color: black;
+    background-color: black;
+}
+
+.grid-container {
+    display: grid;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carbon-fibre {
+    margin: 1rem;
+    width: 400px;
+    height: 200px;
+    background:
+        radial-gradient(black 15%, transparent 16%) 0 0,
+        radial-gradient(black 15%, transparent 16%) 8px 8px,
+        radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0 1px,
+        radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 8px 9px;
+    background-color: #282828;
+    background-size: 16px 16px;
+    /*   background-repeat:no-repeat; */
+    border: 5px solid white;
+    box-shadow: 10px 10px 10px white;
+}
+
+@media (min-width: 45rem) {
+    .carbon-fibre {
+        background: #333;
+    }
+}
+
