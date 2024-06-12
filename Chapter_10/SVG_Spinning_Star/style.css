@@ -38,7 +38,7 @@ h1 {
 }
 
 .star_Wrapper {
-    animation: spin 2s 0s;
+    animation: spin 2s .5s;
     transform-origin: 50% 50%;
 }
 
