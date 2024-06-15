@@ -1,2 +1,2 @@
 # Responsive_Web_Design
- My version of example programs from the text Responsive Web Design with HTML5 and CSS3
+ My versions of example programs from the text Responsive Web Design with HTML5 and CSS3
