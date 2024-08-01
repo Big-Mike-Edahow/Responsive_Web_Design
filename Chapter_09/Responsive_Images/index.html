@@ -1,0 +1,51 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./static/css/style.css" type="text/css" rel="stylesheet">
+    <link href="./static/images/favicon.ico" rel="shortcut icon">
+    <title>CSS Responsive Images</title>
+</head>
+
+<body>
+    <main>
+        <section class="center">
+            <h1>CSS Responsive Images! 🖼️</h1>
+            <br><br>
+        </section>
+        <section class="grid-container">
+            <figure>
+                <picture>
+                    <source srcset="./static/images/squoosh-scones.avif" type="image/avif">
+                    <source srcset="./static/images/squoosh-scones.webp" type="image/webp">
+                    <img src="./static/images/scones.jpg" alt="A delicious scone, baked to perfection." width="320px"
+                        loading="lazy">
+                </picture>
+            </figure>
+            <figure>
+                <img src="./static/images/scones_small.jpg"
+                    srcset="./static/imgaes/scones_medium.jpg 1.5x, ./static/images/scones_large.jpg 2x"
+                    alt="Delicious scones" width="320px">
+            </figure>
+            <figure>
+                <img srcset="./static/images/scones_small.jpg 450w, ./static/images/scones_medium.jpg 900w"
+                    sizes="(min-width: 320px) 100vw, (min-width: 640px) 50vw" src="./static/images/scones_small.jpg"
+                    alt="Delicious scones" width="320px">
+            </figure>
+            <figure>
+                <picture>
+                    <source media="(min-width: 480px)" srcset="./static/images/scones.jpg">
+                    <source media="(min-width: 960px)" srcset="./static/images/scones.jpg">
+                    <img src="./static/images/scones.jpg" alt="Scones" width="320px">
+                </picture>
+            </figure>
+        </section>
+    </main>
+</body>
+
+</html>
+

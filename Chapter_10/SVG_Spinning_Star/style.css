@@ -1,0 +1,48 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(202, 168, 233);
+}
+
+main {
+    margin: 20px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.star_Wrapper {
+    animation: spin 2s .5s;
+    transform-origin: 50% 50%;
+}
+
+.wrapper {
+    padding: 2rem;
+    margin: 2rem;
+}

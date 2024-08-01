@@ -1,0 +1,38 @@
+/* style.css */
+
+body {
+    background-color: aqua;
+}
+
+main {
+    margin-top: 30px;
+}
+
+div.desktop {
+    display: block;
+    background-color: chartreuse;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+div.mobile {
+    display: none;
+    background-color: mediumorchid;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 650px) {
+    div.mobile {
+        display: block;
+    }
+
+    div.desktop {
+        display: none;
+    }
+}
+

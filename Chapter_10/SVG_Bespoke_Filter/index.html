@@ -1,0 +1,43 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./static/css/style.css" type="text/css" rel="stylesheet">
+    <title>SVG Bespoke Filter</title>
+</head>
+
+<body>
+    <main>
+        <section class="center">
+            <h1>SVG Bespoke Filter! 🧙‍♀️</h1>
+            <br><br>
+        </section>
+        <section class="grid-container">
+            <figure>
+                <img src="./static/images/Queen.png" alt="Queen Elizabeth" width="600px">
+                <figcaption>Before</figcaption>
+            </figure>
+            <figure>
+                <img class="filter" src="./static/images/Queen.png" alt="Queen Elizabeth" width="600px">
+                <figcaption>After</figcaption>
+            </figure>
+        </section>
+        <div>
+            <svg display="none" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <defs>
+                    <filter id="myfilter" x="0" y="0">
+                        <feColorMatrix in="SourceGraphic" type="hueRotate" values="90" result="A" />
+                        <feGaussianBlur in="A" stdDeviation="6" />
+                    </filter>
+                </defs>
+            </svg>
+        </div>
+    </main>
+</body>
+
+</html>
+

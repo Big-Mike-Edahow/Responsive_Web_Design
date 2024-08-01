@@ -1,0 +1,45 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+header {
+    background-color: lightsalmon;
+    color: black;
+    padding: 1.5rem;
+    border: 2px solid black;
+}
+
+main {
+    flex: 1 0 auto;     /* Set to grow to all of the available space. */
+    color: #333;
+    padding: 1.5rem;
+    border: 2px solid black;
+}
+
+footer {
+    background-color: violet;
+    color: black;
+    padding: 1.5rem;
+    border: 2px solid black;
+}
+
+.center {
+    text-align: center;
+}
+

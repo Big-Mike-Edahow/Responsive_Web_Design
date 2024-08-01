@@ -1,0 +1,121 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    padding: 15px 15px;
+    font-size: 1.3rem;
+    line-height: 1.2;
+    max-width: 60rem;
+    margin: 0 auto;
+    min-height: 100vh;
+    color: #333;
+}
+
+main {
+    padding: 0 5px;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    text-align: center;
+    border-bottom: 8px solid lightslategray;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+}
+
+.Strap {
+    font-size: 1rem;
+}
+
+.MoneyShot {
+    position: relative;
+}
+
+.MoneyShotImg {
+    border: 6px solid #e8cfa9;
+    border-radius: 4px;
+}
+
+.LogoWrapper {
+    display: block;
+}
+
+figcaption {
+    font-size: 0.75rem;
+    padding: 3px;
+    background-color: #222;
+    color: #e4e4e4;
+}
+
+.IntroText {
+    font-size: 1.8rem;
+    font-style: italic;
+    padding: 0;
+}
+
+.MethodWrapper li {
+    padding: 0.4rem 5px;
+    list-style-type: decimal-leading-zero;
+    line-height: 1.4em;
+}
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        border-left: 4px solid #f9f9f9;
+        border-right: 4px solid #f9f9f9;
+        padding: 1rem 2rem;
+    }
+
+    .IntroWrapper {
+        display: flex;
+        gap: 0 20px;
+        flex: 1 1 auto;
+        align-items: center;
+    }
+
+    .MoneyShot,
+    .IntroText {
+        margin: 0;
+        flex: 1 1 50%;
+    }
+    .MoneyShotImg {
+        filter: drop-shadow(0 0 20px #0008);
+        border: 0;
+    }
+    .IntroText {
+        padding: 0.5rem;
+        font-size: 2.5rem;
+        text-align: left;
+        position: relative;
+    }
+
+    .Ingredients {
+        font-size: 0.9rem;
+        float: right;
+        padding: 1rem;
+        margin: 0 0 0.5rem 1rem;
+        border-radius: 3px;
+        background-color: #ffffdf;
+        border: 9px solid #debb71;
+    }
+
+    .Ingredients h3 {
+        margin: 0;
+    }
+}
+

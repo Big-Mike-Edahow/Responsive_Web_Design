@@ -1,0 +1,57 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: azure;
+}
+
+nav {
+    display: flex;
+    min-height: 44px;
+}
+
+a {
+    margin: 5px;
+    padding: 5px;
+    font-family: sans-serif;
+    color: #fff;
+    text-indent: 1rem;
+    background-color: #ccc;
+    display: inline-flex;
+    flex: 1 1 20%;
+    align-self: stretch;
+    align-items: center;
+    gap: 5px;
+    transition: box-shadow .5s;
+    text-decoration: none;
+    box-shadow: 5px 5px 5px #CC3232;
+}
+
+a+a {
+    border-left: 1px solid #aaa;
+}
+
+a:hover {
+    box-shadow: inset 5px 5px 5px #CC3232;
+}
+
+main {
+    margin-top: 50px;
+}
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.headline-h1 {
+    font-size: 3em;
+    font-weight: 500;
+}

@@ -1,0 +1,46 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    color: black;
+    background-color: rgb(235, 224, 224);
+}
+
+main {
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.filter {
+    filter: url('#myfilter');
+}
+
+figcaption {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 3px;
+    padding: 3px;
+}

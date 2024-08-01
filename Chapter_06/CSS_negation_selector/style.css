@@ -1,0 +1,30 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+div:is(.blue) {
+	display: inline-block;
+	height: 5rem;
+	width: 5rem;
+    margin: 5px;
+    padding: 5px;
+	background-color: blue;
+    box-shadow: 5px 5px 5px black;
+}
+
+div:not(.blue) {
+    display: inline-block;
+    height: 5rem;
+    width: 5rem;
+    margin: 5px;
+    padding: 5px;
+	background-color: orange;
+	border-radius: 50%;
+    box-shadow: 5px 5px 5px black;
+}
+
