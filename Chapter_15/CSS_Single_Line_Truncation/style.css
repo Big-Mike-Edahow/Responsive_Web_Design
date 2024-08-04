@@ -1,0 +1,28 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: cornsilk;
+}
+
+main {
+    margin: 20px;
+    padding: 20px;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+.truncate {
+	width: 530px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}

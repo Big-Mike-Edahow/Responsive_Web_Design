@@ -1,0 +1,31 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: cornsilk;
+}
+
+main {
+    margin: 20px;
+    padding: 20px;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+.multi-line-truncate {
+	width: 450px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+    line-clamp: 2;
+	-webkit-box-orient: vertical;
+	display: -webkit-box;
+}
